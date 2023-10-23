@@ -75,22 +75,45 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 
-<div class="w-screen h-screen flex items-center justify-center p-10 cursor-default">
+<div
+	class="w-screen h-screen flex items-end md:items-center justify-center pt-10 md:p-10 cursor-default"
+>
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-10" />
 	<div
-		class="bg-white flex flex-col overflow-hidden backdrop-brightness-150 bg-opacity-80 shadow-window backdrop-blur-xl rounded-window h-full w-full max-h-window max-w-window"
+		class="bg-white flex flex-col overflow-hidden backdrop-brightness-150 bg-opacity-80 shadow-window backdrop-blur-xl rounded-window h-full w-full max-h-[90%] md:max-h-window max-w-window"
 	>
 		<Input isFocused={isSearchFocused} />
-		<div class="p-2 overflow-y-auto flex-grow" bind:this={scrollContainer}>
-			<SectionHeader>Recent work</SectionHeader>
-			<div class="grid grid-cols-2 md:grid-cols-4">
-				{#each portfolio as item, index}
-					{#if item.itemType === 'project'}
-						<PortfolioItem
+		<div class="py-2 overflow-y-auto flex-grow" bind:this={scrollContainer}>
+			<div class="px-2">
+				<SectionHeader>Recent work</SectionHeader>
+				<div class="grid grid-cols-2 md:grid-cols-4">
+					{#each portfolio as item, index}
+						{#if item.itemType === 'project'}
+							<PortfolioItem
+								label={item.name}
+								isActive={activeProjectIndex === index && activeIndex === 0}
+								category={item.detail}
+								imgSrc={item.imgSrc}
+								on:click={() => {
+									item.action();
+								}}
+							/>
+						{/if}
+					{/each}
+				</div>
+			</div>
+			<div class="w-full h-px bg-black bg-opacity-10 my-2" />
+			<div class="px-2">
+				{#each homeLinks as item, index}
+					{#if item.itemType !== 'project'}
+						{#if homeLinks[index - 1] === undefined || homeLinks[index - 1].category !== item.category}
+							<SectionHeader>{item.category}</SectionHeader>
+						{/if}
+						<Item
 							label={item.name}
-							isActive={activeProjectIndex === index && activeIndex === 0}
-							category={item.detail}
-							imgSrc={item.imgSrc}
+							secondaryLabel={item.secondaryLabel}
+							detail={item.detail}
+							isActive={activeIndex === index + 1}
 							on:click={() => {
 								item.action();
 							}}
@@ -98,22 +121,6 @@
 					{/if}
 				{/each}
 			</div>
-			{#each homeLinks as item, index}
-				{#if item.itemType !== 'project'}
-					{#if homeLinks[index - 1] === undefined || homeLinks[index - 1].category !== item.category}
-						<SectionHeader>{item.category}</SectionHeader>
-					{/if}
-					<Item
-						label={item.name}
-						secondaryLabel={item.secondaryLabel}
-						detail={item.detail}
-						isActive={activeIndex === index + 1}
-						on:click={() => {
-							item.action();
-						}}
-					/>
-				{/if}
-			{/each}
 		</div>
 		<Footer {actionLabel} />
 	</div>

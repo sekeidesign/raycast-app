@@ -13,8 +13,8 @@
 
 <button
 	class="flex flex-col items-start gap-3 p-2 rounded-lg text-body leading-4 cursor-default bg-black outline-none {isActive
-		? 'bg-opacity-10 hover:bg-opacity-10'
-		: 'bg-opacity-0 hover:bg-opacity-5'}"
+		? 'bg-opacity-0 md:bg-opacity-10 md:hover:bg-opacity-10'
+		: 'bg-opacity-0 md:hover:bg-opacity-5'}"
 	tabindex="-1"
 	on:click={() => {
 		dispatch('click');
@@ -23,7 +23,13 @@
 >
 	<div class="w-full h-32 overflow-hidden rounded relative">
 		<div class="relative z-10 w-full h-full">
-			<img src={imgSrc} alt={`${label} Project Cover Image`} class="w-full h-full object-cover" />
+			<img
+				src={imgSrc}
+				alt={`${label} Project Cover Image`}
+				class="w-full h-full object-cover transition-transform duration-200 {isActive
+					? 'scale-105'
+					: 'scale-100'}"
+			/>
 		</div>
 		<div class="absolute top-2 right-2 z-20">
 			<PortfolioChip label={category} {isActive} />
