@@ -16,9 +16,7 @@
 		? 'bg-opacity-0 lg:bg-opacity-10 lg:hover:bg-opacity-10'
 		: 'bg-opacity-0 lg:hover:bg-opacity-5'}"
 	tabindex="-1"
-	on:click={() => {
-		dispatch('click');
-	}}
+	on:click
 	use:focusAction={isActive}
 >
 	<div class="w-full h-32 overflow-hidden rounded relative">
@@ -36,7 +34,7 @@
 		</div>
 	</div>
 	<div class="flex flex-col items-stars gap-1">
-		<span class="text-primary">{label}</span>
+		<span class="text-primary text-left">{label}</span>
 		<!-- <span class="text-secondary">{secondaryLabel}</span> -->
 	</div>
 </button>

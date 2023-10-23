@@ -63,10 +63,8 @@ export const homeLinks = [
 		secondaryLabel: 'Design Engineer',
 		detail: 'Profile',
 		actionLabel: 'Open profile',
-		action: () => {
-			openURL('Open profile');
-		},
-		itemType: 'profile',
+		destination: 'profile',
+		itemType: 'local',
 		category: 'Welcome to Sekei'
 	},
 	{
@@ -74,10 +72,8 @@ export const homeLinks = [
 		secondaryLabel: null,
 		detail: 'Cover Letter',
 		actionLabel: 'Open document',
-		action: () => {
-			openURL('Open document');
-		},
-		itemType: 'item',
+		destination: 'cover-letter',
+		itemType: 'local',
 		category: 'Basics'
 	},
 	{

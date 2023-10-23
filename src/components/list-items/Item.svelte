@@ -14,9 +14,7 @@
 		? 'bg-opacity-0 lg:bg-opacity-10 lg:hover:bg-opacity-10'
 		: 'bg-opacity-0 lg:hover:bg-opacity-5'}"
 	tabindex="-1"
-	on:click={() => {
-		dispatch('click');
-	}}
+	on:click
 	use:focusAction={isActive}
 >
 	<div class="w-5 h-5 overflow-hidden rounded">
