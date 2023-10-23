@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-[#F2F0EE] h-10 border-t border-black border-opacity-10 hidden sm:flex items-center justify-end px-4 flex-shrink-0"
+	class="bg-[#F2F0EE] h-10 border-t border-black border-opacity-10 hidden lg:flex items-center justify-end px-4 flex-shrink-0"
 >
 	<div class="flex gap-3 items-center text-xs font-medium text-secondary">
 		<span class="text-primary">{actionLabel}</span>

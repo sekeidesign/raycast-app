@@ -13,8 +13,8 @@
 
 <button
 	class="flex flex-col items-start gap-3 p-2 rounded-lg text-body leading-4 cursor-default bg-black outline-none {isActive
-		? 'bg-opacity-0 sm:bg-opacity-10 sm:hover:bg-opacity-10'
-		: 'bg-opacity-0 sm:hover:bg-opacity-5'}"
+		? 'bg-opacity-0 lg:bg-opacity-10 lg:hover:bg-opacity-10'
+		: 'bg-opacity-0 lg:hover:bg-opacity-5'}"
 	tabindex="-1"
 	on:click={() => {
 		dispatch('click');

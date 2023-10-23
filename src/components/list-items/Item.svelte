@@ -11,8 +11,8 @@
 
 <button
 	class="flex items-center gap-3 px-2 py-2.5 rounded-lg w-full text-body cursor-default leading-4 bg-black outline-none {isActive
-		? 'bg-opacity-0 sm:bg-opacity-10 sm:hover:bg-opacity-10'
-		: 'bg-opacity-0 sm:hover:bg-opacity-5'}"
+		? 'bg-opacity-0 lg:bg-opacity-10 lg:hover:bg-opacity-10'
+		: 'bg-opacity-0 lg:hover:bg-opacity-5'}"
 	tabindex="-1"
 	on:click={() => {
 		dispatch('click');

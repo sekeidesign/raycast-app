@@ -76,17 +76,17 @@
 <svelte:window on:keydown={handleKeyDown} />
 
 <div
-	class="w-screen h-screen flex items-end sm:items-center justify-center pt-10 sm:p-10 cursor-default"
+	class="w-screen h-screen flex items-end lg:items-center justify-center pt-10 lg:p-10 cursor-default"
 >
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-10" />
 	<div
-		class="bg-white flex flex-col overflow-hidden backdrop-brightness-150 bg-opacity-80 shadow-window backdrop-blur-xl rounded-window h-full w-full max-h-[90%] sm:max-h-window max-w-window"
+		class="bg-white flex flex-col overflow-hidden backdrop-brightness-150 bg-opacity-80 shadow-window backdrop-blur-xl rounded-window h-full w-full max-h-[90%] lg:max-h-window max-w-window"
 	>
 		<Input isFocused={isSearchFocused} />
 		<div class="py-2 overflow-y-auto flex-grow" bind:this={scrollContainer}>
 			<div class="px-2">
 				<SectionHeader>Recent work</SectionHeader>
-				<div class="grid grid-cols-2 sm:grid-cols-4">
+				<div class="grid grid-cols-2 lg:grid-cols-4">
 					{#each portfolio as item, index}
 						{#if item.itemType === 'project'}
 							<PortfolioItem
