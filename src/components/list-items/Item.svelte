@@ -3,10 +3,13 @@
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 
+	import ItemIcon from '$components/ItemIcon.svelte';
+
 	export let label = 'Label yo';
 	export let secondaryLabel = 'Secondary Label';
 	export let detail = 'Detail';
 	export let isActive = false;
+	export let icon = 'raycast';
 </script>
 
 <button
@@ -18,9 +21,7 @@
 	use:focusAction={isActive}
 >
 	<div class="w-5 h-5 overflow-hidden rounded">
-		<slot name="icon">
-			<div class="w-5 h-5 rounded-full bg-black" />
-		</slot>
+		<ItemIcon {icon} />
 	</div>
 	<div class="flex items-center gap-2 flex-grow">
 		<span class="text-primary">{label}</span>

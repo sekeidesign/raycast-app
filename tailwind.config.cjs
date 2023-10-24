@@ -7,7 +7,8 @@ const config = {
 			fontSize: {
 				'2xs': '0.625rem',
 				section: '0.75rem',
-				body: '0.8125rem'
+				body: '0.8125rem',
+				reader: '0.9375rem'
 			},
 			borderRadius: {
 				window: '.625rem'
@@ -22,7 +23,8 @@ const config = {
 			textColor: {
 				primary: 'rgba(13, 13, 13, 1)',
 				secondary: 'rgba(13, 13, 13, 0.50)',
-				tertiary: 'rgba(13, 13, 13, 0.35)'
+				tertiary: 'rgba(13, 13, 13, 0.35)',
+				raycast: '#A82222'
 			},
 			minWidth: {
 				5: '20px',

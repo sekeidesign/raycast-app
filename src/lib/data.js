@@ -13,6 +13,7 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
+		icon: '',
 		imgSrc:
 			'https://cdn.dribbble.com/userupload/10890618/file/original-ae9ad54b090777da644bcb3e3e309f3a.jpg?resize=1024x768'
 	},
@@ -26,6 +27,7 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
+		icon: '',
 		imgSrc:
 			'https://cdn.dribbble.com/userupload/10890618/file/original-ae9ad54b090777da644bcb3e3e309f3a.jpg?resize=1024x768'
 	},
@@ -39,6 +41,7 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
+		icon: '',
 		imgSrc:
 			'https://cdn.dribbble.com/userupload/7433671/file/original-010080af7ef7b9fed986b3070886b7b6.jpg?resize=1024x768'
 	},
@@ -52,6 +55,7 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
+		icon: '',
 		imgSrc:
 			'https://cdn.dribbble.com/userupload/8278938/file/original-1738f98cd80a85154838670782e9b091.png?resize=1024x768'
 	}
@@ -65,16 +69,18 @@ export const homeLinks = [
 		actionLabel: 'Open profile',
 		destination: 'profile',
 		itemType: 'local',
-		category: 'Welcome to Sekei'
+		category: 'Welcome to Sekei',
+		icon: 'avatar'
 	},
 	{
 		name: 'Why Raycast',
 		secondaryLabel: null,
-		detail: 'Cover Letter',
+		detail: 'Intro & Cover Letter',
 		actionLabel: 'Open document',
 		destination: 'cover-letter',
 		itemType: 'local',
-		category: 'Basics'
+		category: 'Basics',
+		icon: 'raycast'
 	},
 	{
 		name: 'My work',
@@ -85,7 +91,8 @@ export const homeLinks = [
 			openURL('https://dribbble.com/sekeidesign');
 		},
 		itemType: 'item',
-		category: 'Basics'
+		category: 'Basics',
+		icon: 'work'
 	},
 	{
 		name: 'Praise board',
@@ -98,7 +105,8 @@ export const homeLinks = [
 			);
 		},
 		itemType: 'item',
-		category: 'Basics'
+		category: 'Basics',
+		icon: 'praiseBoard'
 	},
 	{
 		name: 'Email me',
@@ -109,7 +117,8 @@ export const homeLinks = [
 			openURL('mailto:pg@sekei.ca');
 		},
 		itemType: 'item',
-		category: 'Links'
+		category: 'Links',
+		icon: 'email'
 	},
 	{
 		name: 'LinkedIn',
@@ -120,7 +129,8 @@ export const homeLinks = [
 			openURL('https://www.linkedin.com/in/pgonni/');
 		},
 		itemType: 'item',
-		category: 'Links'
+		category: 'Links',
+		icon: 'linkedin'
 	},
 	{
 		name: 'Instagram',
@@ -131,7 +141,8 @@ export const homeLinks = [
 			openURL('https://www.instagram.com/sekeidesign/');
 		},
 		itemType: 'item',
-		category: 'Links'
+		category: 'Links',
+		icon: 'instagram'
 	},
 	{
 		name: 'YouTube',
@@ -142,7 +153,8 @@ export const homeLinks = [
 			openURL('https://youtube.com/@sekeidesign');
 		},
 		itemType: 'item',
-		category: 'Links'
+		category: 'Links',
+		icon: 'youtube'
 	},
 	{
 		name: 'Threads',
@@ -153,7 +165,8 @@ export const homeLinks = [
 			openURL('https://www.threads.net/@sekeidesign');
 		},
 		itemType: 'item',
-		category: 'Links'
+		category: 'Links',
+		icon: 'threads'
 	},
 	{
 		name: 'My Bento',
@@ -164,7 +177,8 @@ export const homeLinks = [
 			openURL('https://bento.me/sekeidesign');
 		},
 		itemType: 'item',
-		category: 'Links'
+		category: 'Links',
+		icon: 'bento'
 	}
 ];
 
@@ -178,7 +192,8 @@ export const profileLinks = [
 			openURL('https://metafy.gg/');
 		},
 		itemType: 'item',
-		category: 'Experience'
+		category: 'Experience',
+		icon: 'metafy'
 	},
 	{
 		name: 'Product Designer',
@@ -186,10 +201,11 @@ export const profileLinks = [
 		detail: "Oct' 21 - Jan' 23",
 		actionLabel: 'Open link',
 		action: () => {
-			openURL('https://metafy.gg/');
+			openURL('https://metalab.com/');
 		},
 		itemType: 'item',
-		category: 'Experience'
+		category: 'Experience',
+		icon: 'metalab'
 	},
 	{
 		name: 'Product Designer',
@@ -200,7 +216,8 @@ export const profileLinks = [
 			openURL('https://fieldeffect.com/');
 		},
 		itemType: 'item',
-		category: 'Experience'
+		category: 'Experience',
+		icon: 'fieldEffect'
 	},
 	{
 		name: 'StageGuide',
@@ -208,10 +225,11 @@ export const profileLinks = [
 		detail: 'iOS App',
 		actionLabel: 'Open link',
 		action: () => {
-			openURL('https://metalab.com/');
+			openURL('https://apps.apple.com/story/id1683690431');
 		},
 		itemType: 'item',
-		category: 'Personal Projects'
+		category: 'Personal Projects',
+		icon: 'stageGuide'
 	},
 	{
 		name: 'Figjenda',
@@ -219,9 +237,10 @@ export const profileLinks = [
 		detail: 'FigJam Widget',
 		actionLabel: 'Open link',
 		action: () => {
-			openURL('https://fieldeffect.com/');
+			openURL('https://www.figma.com/community/widget/1052257340061758363/figjenda');
 		},
 		itemType: 'item',
-		category: 'Personal Projects'
+		category: 'Personal Projects',
+		icon: 'figjenda'
 	}
 ];

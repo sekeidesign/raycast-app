@@ -105,6 +105,7 @@
 					secondaryLabel={item.secondaryLabel}
 					detail={item.detail}
 					isActive={activeIndex === index}
+					icon={item.icon}
 					on:click={() => {
 						item.itemType === 'local' ? updateLocation(item.destination) : item.action();
 					}}

@@ -1,13 +1,13 @@
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="20" height="20" rx="5" fill="url(#paint0_linear_30_770)" style=""/>
 <g clip-path="url(#clip0_30_770)">
-<path d="M3 7H8.5" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.5 7H17" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 8.5C10.8284 8.5 11.5 7.82843 11.5 7C11.5 6.17157 10.8284 5.5 10 5.5C9.17157 5.5 8.5 6.17157 8.5 7C8.5 7.82843 9.17157 8.5 10 8.5Z" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.5 14.5C5.32843 14.5 6 13.8284 6 13C6 12.1716 5.32843 11.5 4.5 11.5C3.67157 11.5 3 12.1716 3 13C3 13.8284 3.67157 14.5 4.5 14.5Z" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.5 14.5C16.3284 14.5 17 13.8284 17 13C17 12.1716 16.3284 11.5 15.5 11.5C14.6716 11.5 14 12.1716 14 13C14 13.8284 14.6716 14.5 15.5 14.5Z" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.4863 7.20312C12.4767 7.48183 13.3692 8.03237 14.0627 8.79237C14.7562 9.55237 15.223 10.4914 15.4101 11.5031" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.58984 11.5031C4.77702 10.4915 5.24379 9.55243 5.93728 8.79245C6.63077 8.03246 7.52324 7.48189 8.51359 7.20312" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.875 7.375H8.6875" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.3125 7.375H16.125" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 8.6875C10.7249 8.6875 11.3125 8.09987 11.3125 7.375C11.3125 6.65013 10.7249 6.0625 10 6.0625C9.27513 6.0625 8.6875 6.65013 8.6875 7.375C8.6875 8.09987 9.27513 8.6875 10 8.6875Z" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.1875 13.9375C5.91237 13.9375 6.5 13.3499 6.5 12.625C6.5 11.9001 5.91237 11.3125 5.1875 11.3125C4.46263 11.3125 3.875 11.9001 3.875 12.625C3.875 13.3499 4.46263 13.9375 5.1875 13.9375Z" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.8125 13.9375C15.5374 13.9375 16.125 13.3499 16.125 12.625C16.125 11.9001 15.5374 11.3125 14.8125 11.3125C14.0876 11.3125 13.5 11.9001 13.5 12.625C13.5 13.3499 14.0876 13.9375 14.8125 13.9375Z" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.3003 7.55273C12.1669 7.7966 12.9478 8.27833 13.5546 8.94333C14.1615 9.60832 14.5699 10.43 14.7336 11.3152" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.26611 11.3152C5.42989 10.43 5.83832 9.60838 6.44512 8.94339C7.05192 8.2784 7.83284 7.79666 8.69939 7.55273" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="1.09375" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <linearGradient id="paint0_linear_30_770" x1="0" y1="0" x2="20" y2="21" gradientUnits="userSpaceOnUse">
@@ -15,7 +15,7 @@
 <stop offset="1" stop-color="#C22424" style="stop-color:#C22424;stop-color:color(display-p3 0.7625 0.1430 0.1430);stop-opacity:1;"/>
 </linearGradient>
 <clipPath id="clip0_30_770">
-<rect width="16" height="16" fill="white" style="fill:white;fill:white;fill-opacity:1;" transform="translate(2 2)"/>
+<rect width="14" height="14" fill="white" style="fill:white;fill:white;fill-opacity:1;" transform="translate(3 3)"/>
 </clipPath>
 </defs>
 </svg>
