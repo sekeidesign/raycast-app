@@ -78,7 +78,7 @@
 <div class="py-2 overflow-y-auto flex-grow" bind:this={scrollContainer}>
 	<div class="px-2">
 		<SectionHeader>Recent work</SectionHeader>
-		<div class="grid grid-cols-2 lg:grid-cols-4">
+		<div class="grid grid-cols-2 md:grid-cols-4">
 			{#each portfolio as item, index}
 				{#if item.itemType === 'project'}
 					<PortfolioItem

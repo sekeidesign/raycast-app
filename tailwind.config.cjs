@@ -35,6 +35,9 @@ const config = {
 			},
 			maxHeight: {
 				window: '560px'
+			},
+			height: {
+				screen: 'calc(100dvh)'
 			}
 		}
 	},
