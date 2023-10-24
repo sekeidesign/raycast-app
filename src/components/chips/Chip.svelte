@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="px-2 py-1 bg-black bg-opacity-10 flex items-center justify-center rounded-full border border-black border-opacity-10 relative w-fit"
+	class="px-2 py-1 bg-black bg-opacity-10 flex items-center justify-center h-6 rounded-full border border-black border-opacity-10 relative w-fit"
 >
-	<span class="text-2xs text-primary leading-3 font-semibold">{label}</span>
+	<span class="text-body text-primary leading-normal">{label}</span>
 </div>

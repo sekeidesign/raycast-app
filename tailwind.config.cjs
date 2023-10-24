@@ -15,7 +15,9 @@ const config = {
 			boxShadow: {
 				window:
 					'0px 20px 56px 0px rgba(0, 0, 0, 0.45), 0px 1px 1px 0px #FFF inset, 0px 0px 0.5px 0.75px rgba(0, 0, 0, 0.17)',
-				chip: 'box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.50);'
+				chip: '0px 4px 12px 0px rgba(0, 0, 0, 0.50);',
+				avatar:
+					'0px 8px 16px 0px rgba(0, 0, 0, 0.15), 0px 1px 1px 0px rgba(255, 255, 255, 0.50) inset, 0px 0px 0.5px 0.75px rgba(0, 0, 0, 0.17);'
 			},
 			textColor: {
 				primary: 'rgba(13, 13, 13, 1)',

@@ -21,13 +21,7 @@
 >
 	<div class="w-full h-32 overflow-hidden rounded relative">
 		<div class="relative z-10 w-full h-full">
-			<img
-				src={imgSrc}
-				alt={`${label} Project Cover Image`}
-				class="w-full h-full object-cover transition-transform duration-200 {isActive
-					? 'scale-105'
-					: 'scale-100'}"
-			/>
+			<img src={imgSrc} alt={`${label} Project Cover Image`} class="w-full h-full object-cover" />
 		</div>
 		<div class="absolute top-2 right-2 z-20">
 			<PortfolioChip label={category} {isActive} />

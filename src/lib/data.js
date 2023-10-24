@@ -167,3 +167,61 @@ export const homeLinks = [
 		category: 'Links'
 	}
 ];
+
+export const profileLinks = [
+	{
+		name: 'Design Engineer',
+		secondaryLabel: 'Metafy',
+		detail: 'Current',
+		actionLabel: 'Open link',
+		action: () => {
+			openURL('https://metafy.gg/');
+		},
+		itemType: 'item',
+		category: 'Experience'
+	},
+	{
+		name: 'Product Designer',
+		secondaryLabel: 'MetaLab',
+		detail: "Oct' 21 - Jan' 23",
+		actionLabel: 'Open link',
+		action: () => {
+			openURL('https://metafy.gg/');
+		},
+		itemType: 'item',
+		category: 'Experience'
+	},
+	{
+		name: 'Product Designer',
+		secondaryLabel: 'Field Effect',
+		detail: "Dec' 20 - Oct' 21",
+		actionLabel: 'Open link',
+		action: () => {
+			openURL('https://fieldeffect.com/');
+		},
+		itemType: 'item',
+		category: 'Experience'
+	},
+	{
+		name: 'StageGuide',
+		secondaryLabel: 'Design & Dev',
+		detail: 'iOS App',
+		actionLabel: 'Open link',
+		action: () => {
+			openURL('https://metalab.com/');
+		},
+		itemType: 'item',
+		category: 'Personal Projects'
+	},
+	{
+		name: 'Figjenda',
+		secondaryLabel: 'Design & Dev',
+		detail: 'FigJam Widget',
+		actionLabel: 'Open link',
+		action: () => {
+			openURL('https://fieldeffect.com/');
+		},
+		itemType: 'item',
+		category: 'Personal Projects'
+	}
+];

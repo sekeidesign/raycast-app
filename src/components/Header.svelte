@@ -1,12 +1,12 @@
 <script>
+	import { onMount } from 'svelte';
 	import Location from '../Store.js';
 	const updateLocation = (destination) => {
 		Location.update(() => destination);
 	};
 
-	import ShortcutChip from '$components/chips/ShortcutChip.svelte';
-
 	export let variant = 'subpage';
+	export let searchQuery = '';
 
 	const handleKeyDown = (event) => {
 		if (event.key === 'Escape') {
@@ -14,6 +14,12 @@
 			updateLocation('main');
 		}
 	};
+
+	onMount(() => {
+		if (variant === 'search') {
+			document.querySelector('input').focus();
+		}
+	});
 </script>
 
 <svelte:window on:keydown={handleKeyDown} />
@@ -23,10 +29,23 @@
 			type="text"
 			placeholder="Search for projects, assets, and links..."
 			class="w-full bg-transparent placeholder:text-black placeholder:text-opacity-30 outline-none"
+			bind:value={searchQuery}
 		/>
 	{/if}
 	{#if variant === 'subpage'}
-		<ShortcutChip><span class="text-primary">←</span></ShortcutChip>
-		<span>Back</span>
+		<button
+			on:click={() => {
+				updateLocation('main');
+			}}
+			class="cursor-default flex items-center justify-center gap-2"
+		>
+			<!-- svelte-ignore a11y-invalid-attribute -->
+			<a
+				href="#"
+				class="text-primary bg-black transition-opacity duration-100 bg-opacity-10 active:opacity-50 cursor-default rounded-md h-6 w-6 flex items-center justify-center"
+				>←</a
+			>
+			<span class="text-tertiary">Back</span>
+		</button>
 	{/if}
 </div>
