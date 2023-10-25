@@ -5,7 +5,7 @@ const openURL = (url) => {
 export const portfolio = [
 	{
 		name: 'Navigation Ÿ',
-		secondaryLabel: null,
+		secondaryLabel: 'Portfolio',
 		detail: 'UX/UI',
 		actionLabel: 'Open Dribbble',
 		action: () => {
@@ -18,7 +18,7 @@ export const portfolio = [
 	},
 	{
 		name: 'Adaptive Enticement',
-		secondaryLabel: null,
+		secondaryLabel: 'Portfolio',
 		detail: 'UX/UI',
 		actionLabel: 'Open Dribbble',
 		action: () => {
@@ -31,7 +31,7 @@ export const portfolio = [
 	},
 	{
 		name: 'Native App Tarantinos',
-		secondaryLabel: null,
+		secondaryLabel: 'Portfolio',
 		detail: 'Ideation',
 		actionLabel: 'Open Dribbble',
 		action: () => {
@@ -44,7 +44,7 @@ export const portfolio = [
 	},
 	{
 		name: 'Mobile App Icons',
-		secondaryLabel: null,
+		secondaryLabel: 'Portfolio',
 		detail: 'Visual Design',
 		actionLabel: 'Open Dribbble',
 		action: () => {

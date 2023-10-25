@@ -39,7 +39,7 @@
 		{#if destination === 'main' && searchQuery === ''}
 			<Main />
 		{:else if destination === 'main' && searchQuery !== ''}
-			<Search {searchQuery} />
+			<Search {searchQuery} on:clearSearch={() => (searchQuery = '')} />
 		{:else if destination === 'profile'}
 			<Profile />
 		{:else if destination === 'cover-letter'}

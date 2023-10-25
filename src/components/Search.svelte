@@ -1,10 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
-	import Fuse from 'fuse.js';
+	import { onMount, createEventDispatcher } from 'svelte';
+	import fuzzy from 'fuzzy';
 	import Location from '../Store.js';
 	const updateLocation = (destination) => {
 		Location.update(() => destination);
 	};
+
+	const dispatch = createEventDispatcher();
 
 	import Item from '$components/list-items/Item.svelte';
 	import SectionHeader from '$components/SectionHeader.svelte';
@@ -12,10 +14,12 @@
 
 	import { portfolio, homeLinks, profileLinks } from '$lib/data.js';
 	const allLinks = [...portfolio, ...homeLinks, ...profileLinks];
-
 	export let searchQuery = '';
-	const fuse = new Fuse(allLinks);
-	$: results = fuse.search('por', { keys: ['name', 'secondaryLabel', 'detail'] });
+	$: results = fuzzy.filter(searchQuery, allLinks, {
+		extract: (link) => link.name + link.secondaryLabel + link.detail
+	});
+	// const fuse = new Fuse(allLinks);
+	// $: results = fuse.search(searchQuery, { keys: ['name', 'secondaryLabel', 'detail'] });
 	$: console.log(results, allLinks);
 
 	let activeIndex = -1;
@@ -47,6 +51,9 @@
 					openURL('mailto:pg@sekei.ca');
 				}
 				break;
+			case 'Escape':
+				console.log('escape');
+				dispatch('clearSearch');
 		}
 	};
 
@@ -64,16 +71,18 @@
 <svelte:window on:keydown={handleKeyDown} />
 
 <div class="p-2 overflow-y-auto flex-grow" bind:this={scrollContainer}>
-	<SectionHeader>Results</SectionHeader>
+	<SectionHeader>Results for '{searchQuery}'</SectionHeader>
 	{#each results as item, index}
 		<Item
-			label={item.name}
-			secondaryLabel={item.secondaryLabel}
-			detail={item.detail}
+			label={item.original.name}
+			secondaryLabel={item.original.secondaryLabel}
+			detail={item.original.detail}
 			isActive={activeIndex === index}
-			icon={item.icon}
+			icon={item.original.icon}
 			on:click={() => {
-				item.itemType === 'local' ? updateLocation(item.destination) : item.action();
+				item.original.itemType === 'local'
+					? updateLocation(item.original.destination)
+					: item.original.action();
 			}}
 		/>
 	{/each}
