@@ -37,7 +37,11 @@
 		animate(backgroundCover, { opacity: 0 }, { duration: 0.75, delay: 0.8 });
 		animate(keys, { opacity: 0 }, { duration: 0.75, delay: 0.8 });
 		animate(text, { opacity: 1, y: [32, 0] }, { duration: 0.75, delay: 1 });
-		animate(raycastWindow, { opacity: 1, y: [32, 0] }, { duration: 0.75, delay: 1.2 });
+		animate(
+			raycastWindow,
+			{ opacity: 1, y: [48, 0], rotateX: [4, 0] },
+			{ duration: 0.75, delay: 1.2 }
+		);
 	});
 </script>
 
@@ -52,7 +56,7 @@
 </svelte:head>
 <svelte:window on:keydown={handleKeyDown} />
 <div
-	class="w-screen h-screen flex flex-col gap-8 justify-end md:justify-center items-center p-4 pt-10 md:p-10 cursor-default overflow-hidden"
+	class="w-screen h-screen flex flex-col gap-8 justify-end md:justify-center items-center p-4 pt-10 md:p-10 cursor-default overflow-hidden perspective"
 >
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-30" />
 	<div class="absolute inset-0 w-full h-full -z-20 bg-[#1b1111]" bind:this={backgroundCover} />
@@ -79,3 +83,9 @@
 		{/if}
 	</div>
 </div>
+
+<style>
+	.perspective {
+		perspective: 500px;
+	}
+</style>
