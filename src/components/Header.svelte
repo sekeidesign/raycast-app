@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import Location from '../Store.js';
 	const updateLocation = (destination) => {
 		Location.update(() => destination);
@@ -9,17 +8,15 @@
 	export let searchQuery = '';
 
 	const handleKeyDown = (event) => {
-		if (event.key === 'Escape') {
-			if (variant !== 'subpage') return;
-			updateLocation('main');
+		switch (event.key) {
+			case 'k':
+				document.querySelector('input').focus();
+			case 'Escape':
+				if (variant !== 'subpage') return;
+				updateLocation('main');
+				break;
 		}
 	};
-
-	onMount(() => {
-		if (variant === 'search') {
-			document.querySelector('input').focus();
-		}
-	});
 </script>
 
 <svelte:window on:keydown={handleKeyDown} />

@@ -16,11 +16,10 @@
 			<ShortcutChip>B</ShortcutChip>
 		</div>
 		<div class="w-0.5 h-3 bg-black bg-opacity-10 rounded-full" />
-		Email me
+		Search
 		<div class="flex gap-0.5">
 			<ShortcutChip>⌘</ShortcutChip>
-			<ShortcutChip>⇧</ShortcutChip>
-			<ShortcutChip>E</ShortcutChip>
+			<ShortcutChip>K</ShortcutChip>
 		</div>
 	</div>
 </div>

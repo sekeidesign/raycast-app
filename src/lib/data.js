@@ -13,9 +13,8 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
-		icon: '',
-		imgSrc:
-			'https://cdn.dribbble.com/userupload/10890618/file/original-ae9ad54b090777da644bcb3e3e309f3a.jpg?resize=1024x768'
+		icon: 'work',
+		imgSrc: 'navY'
 	},
 	{
 		name: 'Adaptive Enticement',
@@ -27,9 +26,8 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
-		icon: '',
-		imgSrc:
-			'https://cdn.dribbble.com/userupload/10890618/file/original-ae9ad54b090777da644bcb3e3e309f3a.jpg?resize=1024x768'
+		icon: 'work',
+		imgSrc: 'adaptiveEnticement'
 	},
 	{
 		name: 'Native App Tarantinos',
@@ -41,9 +39,8 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
-		icon: '',
-		imgSrc:
-			'https://cdn.dribbble.com/userupload/7433671/file/original-010080af7ef7b9fed986b3070886b7b6.jpg?resize=1024x768'
+		icon: 'work',
+		imgSrc: 'tarantinos'
 	},
 	{
 		name: 'Mobile App Icons',
@@ -55,9 +52,8 @@ export const portfolio = [
 		},
 		itemType: 'project',
 		category: 'Recent projects',
-		icon: '',
-		imgSrc:
-			'https://cdn.dribbble.com/userupload/8278938/file/original-1738f98cd80a85154838670782e9b091.png?resize=1024x768'
+		icon: 'work',
+		imgSrc: 'appIcons'
 	}
 ];
 

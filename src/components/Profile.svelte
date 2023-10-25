@@ -53,6 +53,11 @@
 					openURL('mailto:pg@sekei.ca');
 				}
 				break;
+			case 'k':
+				if (event.metaKey) {
+					updateLocation('main');
+				}
+				break;
 		}
 	};
 
