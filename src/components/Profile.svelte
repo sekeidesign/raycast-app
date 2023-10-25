@@ -75,7 +75,7 @@
 <svelte:window on:keydown={handleKeyDown} />
 <div class="flex-grow overflow-y-scroll" bind:this={scrollContainer}>
 	<div class="flex p-4 gap-3 h-fit items-center border-b border-black border-opacity-10">
-		<div class="w-16 h-16 rounded-full overflow-hidden shadow-avatar">
+		<div class="w-16 h-16 rounded-full overflow-hidden shadow-avatar flex-shrink-0">
 			<img
 				src={avatarLarge}
 				alt="A warm toned headshot of PG Gonni in a cafe, looking off to camera left with a subtle smile"
