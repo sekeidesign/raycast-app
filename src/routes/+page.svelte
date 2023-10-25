@@ -41,12 +41,21 @@
 	});
 </script>
 
+<svelte:head>
+	<title>PG Gonni | Raycast Product Designer Application</title>
+	<meta
+		name="description"
+		content="I'm excited to share my application for the Product Designer, Mobile role. Instead of a typical cover letter and portfolio, I wanted to share more about me in a format very familiar to the Raycast team!"
+	/>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</svelte:head>
 <svelte:window on:keydown={handleKeyDown} />
 <div
 	class="w-screen h-screen flex flex-col gap-8 justify-end md:justify-center items-center p-4 pt-10 md:p-10 cursor-default overflow-hidden"
 >
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-30" />
-	<div class="absolute inset-0 w-full h-full -z-20 bg-[#1b090b]" bind:this={backgroundCover} />
+	<div class="absolute inset-0 w-full h-full -z-20 bg-[#1b1111]" bind:this={backgroundCover} />
 	<div class="absolute inset-0 w-full h-full -z-10" bind:this={keys}>
 		<ButtonAnimation />
 	</div>

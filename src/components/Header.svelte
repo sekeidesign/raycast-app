@@ -10,7 +10,9 @@
 	const handleKeyDown = (event) => {
 		switch (event.key) {
 			case 'k':
-				document.querySelector('input').focus();
+				if (event.metaKey) {
+					document.querySelector('input').focus();
+				}
 			case 'Escape':
 				if (variant !== 'subpage') return;
 				updateLocation('main');
