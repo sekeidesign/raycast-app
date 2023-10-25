@@ -55,7 +55,7 @@
 		<span class="text-xl drop-shadow-pro text-[#ffe2e2]">Product Designer, Mobile</span>
 	</div>
 	<div
-		class="bg-white flex flex-col-reverse md:flex-col overflow-hidden backdrop-brightness-150 bg-opacity-70 md:bg-opacity-80 shadow-window backdrop-blur-xl rounded-window h-full w-full max-h-[90%] md:max-h-window md:max-w-window opacity-0"
+		class="bg-white flex flex-col-reverse md:flex-col overflow-hidden backdrop-brightness-150 bg-opacity-70 md:bg-opacity-80 shadow-window backdrop-blur-xl rounded-window h-full w-full max-h-[calc(90dvh)] md:max-h-window md:max-w-window opacity-0"
 		bind:this={raycastWindow}
 	>
 		<Header variant={destination === 'main' ? 'search' : 'subpage'} bind:searchQuery />

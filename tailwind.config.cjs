@@ -30,8 +30,7 @@ const config = {
 				raycast: '#A82222'
 			},
 			backgroundImage: {
-				'text-gradient':
-					'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 15%, rgba(255, 255, 255, 0.30) 85%);'
+				'text-gradient': 'linear-gradient(180deg, #D54D60 0%, rgba(153, 43, 59, 0.43) 100%);'
 			},
 			minWidth: {
 				5: '20px',

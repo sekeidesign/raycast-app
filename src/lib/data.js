@@ -67,7 +67,7 @@ export const homeLinks = [
 		actionLabel: 'Open profile',
 		destination: 'profile',
 		itemType: 'local',
-		category: 'Welcome to Sekei',
+		category: 'About me',
 		icon: 'avatar'
 	},
 	{
