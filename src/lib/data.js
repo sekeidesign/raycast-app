@@ -221,7 +221,7 @@ export const profileLinks = [
 		detail: 'iOS App',
 		actionLabel: 'Open link',
 		action: () => {
-			openURL('https://apps.apple.com/story/id1683690431');
+			openURL('https://testflight.apple.com/join/2d5Lt1v2');
 		},
 		itemType: 'item',
 		category: 'Personal Projects',

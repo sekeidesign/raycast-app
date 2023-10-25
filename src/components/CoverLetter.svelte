@@ -27,10 +27,10 @@
 		<div class="px-2 pt-2">
 			<div class="h-80 overflow-hidden relative rounded-lg bg-black bg-opacity-10">
 				<iframe
-					src="https://www.loom.com/embed/9f5018d31cd141479a93120445c51a4f?sid=8e1c1b25-a94f-420f-9423-bbb16796c64e"
+					src="https://www.loom.com/embed/fb0d84c72b894d15b516eb710e348871?sid=fcc8d98c-75e9-435f-b0b9-f4a62b3f975b"
 					frameborder="0"
 					style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-					title="Loom intro video"
+					title="Intro video"
 				/>
 			</div>
 		</div>
@@ -62,7 +62,7 @@
 					href="https://apps.apple.com/story/id1683690431"
 					class="text-raycast underline">(including ones featured in the App Store)</a
 				>, as well as my own iOS App for
-				<a href="https://apps.apple.com/story/id1683690431" class="text-raycast underline"
+				<a href="https://testflight.apple.com/join/2d5Lt1v2" class="text-raycast underline"
 					>Riverside Music Festival</a
 				>, where I designed and built Live Activities and the MVP of the product with SwiftUI.
 			</p>

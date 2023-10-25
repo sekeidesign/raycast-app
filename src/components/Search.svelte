@@ -71,7 +71,7 @@
 <svelte:window on:keydown={handleKeyDown} />
 
 <div class="p-2 overflow-y-auto flex-grow" bind:this={scrollContainer}>
-	<SectionHeader>Results for '{searchQuery}'</SectionHeader>
+	<SectionHeader>Results</SectionHeader>
 	{#each results as item, index}
 		<Item
 			label={item.original.name}
