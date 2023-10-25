@@ -23,13 +23,13 @@
 	<div class="w-5 h-5 overflow-hidden rounded">
 		<ItemIcon {icon} />
 	</div>
-	<div class="flex items-center gap-2 flex-grow">
+	<div class="flex flex-col sm:flex-row sm:items-center text-left sm:gap-2 flex-grow">
 		<span class="text-primary">{label}</span>
 		{#if secondaryLabel}
 			<span class="text-secondary">{secondaryLabel}</span>
 		{/if}
 	</div>
 	{#if detail}
-		<span class="text-secondary">{detail}</span>
+		<span class="text-secondary text-right">{detail}</span>
 	{/if}
 </button>
