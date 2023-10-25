@@ -18,14 +18,14 @@
 	<div
 		class="{pressCommand
 			? ''
-			: 'extrude'} bg-[#351518] transition-all ease-button duration-200 border border-[#65282e] rounded-lg w-14 h-11 flex items-center justify-center"
+			: 'extrude'} bg-[#351518] transition-all ease-button duration-200 border border-[#65282e] rounded-lg w-11 h-9 flex items-center justify-center"
 	>
 		<span class="bg-text-gradient text-transparent bg-clip-text">⌘</span>
 	</div>
 	<div
 		class="{pressSpace
 			? ''
-			: 'extrude'} bg-[#351518] transition-all ease-button duration-200 border border-[#65282e] rounded-lg w-40 h-11 flex items-center justify-center"
+			: 'extrude'} bg-[#351518] transition-all ease-button duration-200 border border-[#65282e] rounded-lg w-36 h-9 flex items-center justify-center"
 	>
 		<span class="bg-text-gradient text-transparent bg-clip-text">Space</span>
 	</div>
