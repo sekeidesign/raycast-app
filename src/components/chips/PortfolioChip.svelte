@@ -5,7 +5,7 @@
 
 <div
 	class="px-2 py-1 bg-[#D93E37] bg-opacity-50 backdrop-brightness-50 shadow-chip backdrop-blur-lg flex items-center justify-center rounded-full border border-[#D93E37] border-opacity-50 relative w-fit {isActive
-		? ''
+		? 'saturate-0 md:saturate-100'
 		: 'saturate-0'}"
 >
 	<span

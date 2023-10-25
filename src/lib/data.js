@@ -22,7 +22,9 @@ export const portfolio = [
 		detail: 'UX/UI',
 		actionLabel: 'Open Dribbble',
 		action: () => {
-			openURL('https://dribbble.com/shots/22868504-Navigation-Y');
+			openURL(
+				'https://dribbble.com/shots/22910319-Adaptive-Enticement?utm_source=Clipboard_Shot&utm_campaign=sekeidesign&utm_content=Adaptive%20Enticement&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=sekeidesign&utm_content=Adaptive%20Enticement&utm_medium=Social_Share'
+			);
 		},
 		itemType: 'project',
 		category: 'Recent projects',

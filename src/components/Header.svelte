@@ -21,7 +21,7 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 <div
-	class="w-full p-4 flex gap-2 items-center border-t md:border-b border-black border-opacity-10 h-14"
+	class="w-full p-4 flex gap-2 items-center bg-white bg-opacity-70 md:bg-transparent border-t md:border-b border-black border-opacity-10 h-14"
 >
 	{#if variant === 'search'}
 		<input

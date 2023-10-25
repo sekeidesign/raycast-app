@@ -28,6 +28,7 @@
 	"type": "module",
 	"dependencies": {
 		"fuzzy": "^0.1.3",
+		"motion": "^10.16.4",
 		"svelte-legos": "^0.2.2"
 	}
 }

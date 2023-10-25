@@ -20,11 +20,18 @@ const config = {
 				avatar:
 					'0px 8px 16px 0px rgba(0, 0, 0, 0.15), 0px 1px 1px 0px rgba(255, 255, 255, 0.50) inset, 0px 0px 0.5px 0.75px rgba(0, 0, 0, 0.17);'
 			},
+			dropShadow: {
+				pro: '1px 0 10px #ff6363'
+			},
 			textColor: {
 				primary: 'rgba(13, 13, 13, 1)',
 				secondary: 'rgba(13, 13, 13, 0.50)',
 				tertiary: 'rgba(13, 13, 13, 0.35)',
 				raycast: '#A82222'
+			},
+			backgroundImage: {
+				'text-gradient':
+					'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 15%, rgba(255, 255, 255, 0.30) 85%);'
 			},
 			minWidth: {
 				5: '20px',
