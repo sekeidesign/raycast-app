@@ -59,19 +59,7 @@
 	class="w-screen h-screen flex flex-col gap-8 justify-end md:justify-center items-center p-4 pt-10 md:p-10 cursor-default overflow-hidden perspective"
 >
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-30" />
-	<div class="absolute inset-0 w-full h-full -z-20 bg-[#131011]" bind:this={backgroundCover}>
-		<svg
-			viewBox="0 0 1800 1800"
-			xmlns="http://www.w3.org/2000/svg"
-			class="bg-blend-darken opacity-20 saturate-0"
-		>
-			<filter id="noiseFilter">
-				<feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="3" stitchTiles="stitch" />
-			</filter>
-
-			<rect width="100%" height="100%" filter="url(#noiseFilter)" />
-		</svg>
-	</div>
+	<div class="absolute inset-0 w-full h-full -z-20 bg-[#131112]" bind:this={backgroundCover} />
 	<div class="absolute inset-0 w-full h-full -z-10" bind:this={keys}>
 		<ButtonAnimation />
 	</div>
