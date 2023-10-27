@@ -23,13 +23,13 @@
 
 <svelte:window on:keydown={handleKeyDown} />
 <div
-	class="w-full p-4 flex gap-2 items-center bg-white bg-opacity-70 md:bg-transparent border-t md:border-b border-black border-opacity-10 h-14"
+	class="w-full p-2 md:p-4 flex gap-2 items-center bg-white bg-opacity-70 md:bg-transparent border-t md:border-b rounded-2xl md:rounded-none border-black border-opacity-10 h-14"
 >
 	{#if variant === 'search'}
 		<input
 			type="text"
 			placeholder="Search for projects, assets, and links..."
-			class="w-full bg-transparent placeholder:text-black placeholder:text-opacity-30 outline-none"
+			class="w-full md:bg-transparent p-2 md:p-0 bg-black bg-opacity-5 shadow-inner md:shadow-none rounded-xl placeholder:text-black placeholder:text-opacity-30 outline-none"
 			bind:value={searchQuery}
 		/>
 	{/if}
