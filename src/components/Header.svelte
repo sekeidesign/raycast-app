@@ -29,7 +29,7 @@
 		<input
 			type="text"
 			placeholder="Search for projects, assets, and links..."
-			class="w-full md:bg-transparent p-2 md:p-0 bg-black bg-opacity-5 shadow-inner md:shadow-none rounded-xl placeholder:text-black placeholder:text-opacity-30 outline-none"
+			class="w-full md:bg-transparent p-2 md:p-0 bg-black bg-opacity-5 shadow-inner md:shadow-none rounded-xl md:rounded-none placeholder:text-black placeholder:text-opacity-30 outline-none"
 			bind:value={searchQuery}
 		/>
 	{/if}
@@ -46,7 +46,7 @@
 				class="text-primary bg-black transition-opacity duration-100 bg-opacity-10 active:opacity-50 cursor-default rounded-md h-6 w-6 flex items-center justify-center"
 				>←</a
 			>
-			<span class="text-tertiary">Back</span>
+			<span class="text-tertiary">Esc</span>
 		</button>
 	{/if}
 </div>

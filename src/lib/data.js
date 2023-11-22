@@ -71,14 +71,14 @@ export const homeLinks = [
 		icon: 'avatar'
 	},
 	{
-		name: 'Why Raycast',
+		name: 'Why MetaLab',
 		secondaryLabel: null,
 		detail: 'Intro & Cover Letter',
 		actionLabel: 'Open document',
 		destination: 'cover-letter',
 		itemType: 'local',
 		category: 'Basics',
-		icon: 'raycast'
+		icon: 'metalab'
 	},
 	{
 		name: 'My work',

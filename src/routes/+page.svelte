@@ -9,6 +9,7 @@
 	import Profile from '$components/Profile.svelte';
 	import CoverLetter from '$components/CoverLetter.svelte';
 	import ButtonAnimation from '$components/ButtonAnimation.svelte';
+	import keyboardSVG from '$lib/keys.svg';
 
 	import Location from '../Store.js';
 
@@ -18,11 +19,20 @@
 		destination = data;
 	});
 
+	const openURL = (url) => {
+		window.open(url, '_blank');
+	};
+
 	const handleKeyDown = (event) => {
 		switch (event.key) {
 			case 'k':
 				if (event.metaKey) {
 					Location.update(() => 'main');
+				}
+				break;
+			case 'b':
+				if (event.metaKey) {
+					openURL('https://bento.me/sekeidesign');
 				}
 				break;
 		}
@@ -32,6 +42,7 @@
 	let raycastWindow;
 	let backgroundCover;
 	let keys;
+	let instructions;
 
 	onMount(() => {
 		animate(backgroundCover, { opacity: 0 }, { duration: 0.75, delay: 0.8 });
@@ -42,6 +53,7 @@
 			{ opacity: 1, y: [48, 0], rotateX: [4, 0] },
 			{ duration: 0.75, delay: 1.2 }
 		);
+		animate(instructions, { opacity: 1, y: [24, 0] }, { duration: 0.75, delay: 1.4 });
 	});
 </script>
 
@@ -49,7 +61,7 @@
 	<title>PG Gonni | Raycast Product Designer Application</title>
 	<meta
 		name="description"
-		content="I'm excited to share my application for the Product Designer, Mobile role. Instead of a typical cover letter and portfolio, I wanted to share more about me in a format very familiar to the Raycast team!"
+		content="I'm excited to share my application for the Design Technologist role. Instead of a typical cover letter and portfolio, I wanted to share more about me in the format of one of my favourite tools!"
 	/>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,7 +77,7 @@
 	</div>
 	<div class="flex flex-col items-center opacity-0" bind:this={text}>
 		<span class="text-sm text-[#ffe2e2] opacity-90">Application for</span>
-		<span class="text-xl drop-shadow-pro text-[#ffe2e2]">Product Designer, Mobile</span>
+		<span class="text-xl drop-shadow-pro text-[#ffe2e2]">Design Technologist</span>
 	</div>
 	<div
 		class="bg-white flex flex-col-reverse md:flex-col overflow-hidden backdrop-brightness-150 bg-opacity-70 md:bg-opacity-80 shadow-window backdrop-blur-xl rounded-2xl md:rounded-window h-full w-full max-h-[calc(90dvh)] md:max-h-window md:max-w-window opacity-0"
@@ -81,6 +93,13 @@
 		{:else if destination === 'cover-letter'}
 			<CoverLetter />
 		{/if}
+	</div>
+	<div bind:this={instructions} class="flex gap-2 items-end opacity-0">
+		<span class="text-slate-400 text-sm opacity-30">Navigate with your keyboard</span>
+		<img
+			src={keyboardSVG}
+			alt="A layout representing the up, down, left, and right keys on a keyboard."
+		/>
 	</div>
 </div>
 

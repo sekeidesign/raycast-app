@@ -10,13 +10,19 @@
 	import avatarLarge from '$lib/avatar-large.webp';
 
 	const skills = [
-		'Product Design',
 		'Design Systems',
 		'TailwindCSS',
 		'SvelteKit',
+		'Product Design',
+		'UI Animation',
+		'GSAP',
+		'Framer Motion',
 		'SwiftUI',
+		'Figma',
+		'Webflow',
 		'Pretty funny',
-		'Kinda cool'
+		'Kinda cool',
+		'Has 3 cats'
 	];
 
 	import Location from '../Store.js';
