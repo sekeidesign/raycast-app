@@ -94,8 +94,8 @@
 			<CoverLetter />
 		{/if}
 	</div>
-	<div bind:this={instructions} class="flex gap-2 items-end opacity-0">
-		<span class="text-slate-400 text-sm opacity-30">Navigate with your keyboard</span>
+	<div bind:this={instructions} class="hidden md:flex gap-2 items-end opacity-0">
+		<span class="text-slate-300 text-sm opacity-40">Navigate with your keyboard</span>
 		<img
 			src={keyboardSVG}
 			alt="A layout representing the up, down, left, and right keys on a keyboard."
