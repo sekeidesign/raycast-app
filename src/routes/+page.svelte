@@ -58,7 +58,7 @@
 </script>
 
 <svelte:head>
-	<title>PG Gonni | Raycast Product Designer Application</title>
+	<title>PG Gonni | MetaLab Design Technologist Application</title>
 	<meta
 		name="description"
 		content="I'm excited to share my application for the Design Technologist role. Instead of a typical cover letter and portfolio, I wanted to share more about me in the format of one of my favourite tools!"
