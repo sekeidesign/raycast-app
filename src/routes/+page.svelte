@@ -71,13 +71,14 @@
 	class="w-screen h-screen flex flex-col gap-8 justify-end md:justify-center items-center p-4 pt-10 md:p-10 cursor-default overflow-hidden perspective"
 >
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-30" />
-	<div class="absolute inset-0 w-full h-full -z-20 bg-[#131112]" bind:this={backgroundCover} />
+	<div class="absolute inset-0 w-full h-full -z-20 bg-[#8A82FF] mix-blend-hue" />
+	<div class="absolute inset-0 w-full h-full -z-20 bg-[#1F1E28]" bind:this={backgroundCover} />
 	<div class="absolute inset-0 w-full h-full -z-10" bind:this={keys}>
 		<ButtonAnimation />
 	</div>
 	<div class="flex flex-col items-center opacity-0" bind:this={text}>
-		<span class="text-sm text-[#ffe2e2] opacity-90">Application for</span>
-		<span class="text-xl drop-shadow-pro text-[#ffe2e2]">Design Technologist</span>
+		<span class="text-sm text-[#E4E2FF] opacity-90">Application for</span>
+		<span class="text-xl drop-shadow-pro text-[#E4E2FF]">Design Technologist</span>
 	</div>
 	<div
 		class="bg-white flex flex-col-reverse md:flex-col overflow-hidden backdrop-brightness-150 bg-opacity-70 md:bg-opacity-80 shadow-window backdrop-blur-xl rounded-2xl md:rounded-window h-full w-full max-h-[calc(90dvh)] md:max-h-window md:max-w-window opacity-0"

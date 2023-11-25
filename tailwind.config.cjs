@@ -21,7 +21,7 @@ const config = {
 					'0px 8px 16px 0px rgba(0, 0, 0, 0.15), 0px 1px 1px 0px rgba(255, 255, 255, 0.50) inset, 0px 0px 0.5px 0.75px rgba(0, 0, 0, 0.17);'
 			},
 			dropShadow: {
-				pro: '1px 0 10px #ff6363'
+				pro: '1px 0 10px #8A82FF'
 			},
 			textColor: {
 				primary: 'rgba(13, 13, 13, 1)',
