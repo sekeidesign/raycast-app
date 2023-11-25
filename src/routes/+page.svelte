@@ -72,7 +72,7 @@
 >
 	<img src={background} alt="" class="absolute inset-0 w-full h-full object-cover -z-30" />
 	<div class="absolute inset-0 w-full h-full -z-20 bg-[#8A82FF] mix-blend-hue" />
-	<div class="absolute inset-0 w-full h-full -z-20 bg-[#1F1E28]" bind:this={backgroundCover} />
+	<div class="absolute inset-0 w-full h-full -z-20 bg-[#18171F]" bind:this={backgroundCover} />
 	<div class="absolute inset-0 w-full h-full -z-10" bind:this={keys}>
 		<ButtonAnimation />
 	</div>
