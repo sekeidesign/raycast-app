@@ -18,14 +18,14 @@
 	<div
 		class="{pressCommand
 			? ''
-			: 'extrude'} bg-[#1c1b1b] transition-all ease-button duration-200 border border-[#2d2c2c] rounded-lg w-11 h-9 flex items-center justify-center"
+			: 'extrude'} bg-[#1F1E28] transition-all ease-button duration-200 border border-[#2b2a37] rounded-lg w-11 h-9 flex items-center justify-center"
 	>
 		<span class="bg-text-gradient text-transparent bg-clip-text">⌘</span>
 	</div>
 	<div
 		class="{pressSpace
 			? ''
-			: 'extrude'} bg-[#1c1b1b] transition-all ease-button duration-200 border border-[#2d2c2c] rounded-lg w-36 h-9 flex items-center justify-center"
+			: 'extrude'} bg-[#1F1E28] transition-all ease-button duration-200 border border-[#2b2a37] rounded-lg w-36 h-9 flex items-center justify-center"
 	>
 		<span class="bg-text-gradient text-transparent bg-clip-text">Space</span>
 	</div>
@@ -33,7 +33,7 @@
 
 <style>
 	.extrude {
-		box-shadow: 0px 6px #2d2c2c;
+		box-shadow: 0px 6px #2b2a37;
 		transform: translate3d(0px, -6px, 0);
 	}
 	.ease-button {
