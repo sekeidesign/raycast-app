@@ -3,6 +3,7 @@
 	import { animate } from 'motion';
 
 	import background from '$assets/raycast-wallpaper.webp';
+	import ogImage from '$assets/og-image.jpg';
 	import Header from '$components/Header.svelte';
 	import Main from '$components/Main.svelte';
 	import Search from '$components/Search.svelte';
@@ -58,13 +59,14 @@
 </script>
 
 <svelte:head>
-	<title>PG Gonni | MetaLab Design Technologist Application</title>
+	<title>PG Gonni | Design Engineer | Montreal, QC</title>
 	<meta
 		name="description"
-		content="I'm excited to share my application for the Design Technologist role. Instead of a typical cover letter and portfolio, I wanted to share more about me in the format of one of my favourite tools!"
+		content="Design Engineer based on Montreal. 6+ years of experience making cool shit for your computer."
 	/>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="og:image" content={ogImage} />
 </svelte:head>
 <svelte:window on:keydown={handleKeyDown} />
 <div
@@ -77,8 +79,8 @@
 		<ButtonAnimation />
 	</div>
 	<div class="flex flex-col items-center opacity-0" bind:this={text}>
-		<span class="text-sm text-[#E4E2FF] opacity-90">Application for</span>
-		<span class="text-xl drop-shadow-pro text-[#E4E2FF]">Design Technologist</span>
+		<!-- <span class="text-sm text-[#E4E2FF] opacity-90">Hey friend</span> -->
+		<span class="text-xl drop-shadow-pro text-[#E4E2FF]">Learn about me</span>
 	</div>
 	<div
 		class="bg-white flex flex-col-reverse md:flex-col overflow-hidden backdrop-brightness-150 bg-opacity-70 md:bg-opacity-80 shadow-window backdrop-blur-xl rounded-2xl md:rounded-window h-full w-full max-h-[calc(90dvh)] md:max-h-window md:max-w-window opacity-0"
