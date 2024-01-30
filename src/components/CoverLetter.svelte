@@ -29,7 +29,7 @@
 		<div class="px-2 pt-2">
 			<div class="h-80 overflow-hidden relative rounded-lg bg-black bg-opacity-10">
 				<iframe
-					src="https://www.loom.com/share/7f3dbdde3254489c8413ba4f877c9435?sid=4d08d097-19b4-4b13-be08-44f46b1528eb"
+					src="https://www.loom.com/share/7f3dbdde3254489c8413ba4f877c9435"
 					frameborder="0"
 					style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
 					title="Intro video"
