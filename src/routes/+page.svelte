@@ -62,7 +62,7 @@
 	<title>PG Gonni | Design Engineer | Montreal, QC</title>
 	<meta
 		name="description"
-		content="Design Engineer based on Montreal. 6+ years of experience making cool shit for your computer."
+		content="Design Engineer based on Montreal. 7+ years of experience making cool shit that runs on your computer."
 	/>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,8 +79,8 @@
 		<ButtonAnimation />
 	</div>
 	<div class="flex flex-col items-center opacity-0" bind:this={text}>
-		<!-- <span class="text-sm text-[#E4E2FF] opacity-90">Hey friend</span> -->
-		<span class="text-xl drop-shadow-pro text-[#E4E2FF]">Learn about me</span>
+		<span class="text-sm text-[#E4E2FF] opacity-90">Application for</span>
+		<span class="text-xl drop-shadow-pro text-[#E4E2FF]">Head of Product Design</span>
 	</div>
 	<div
 		class="bg-white flex flex-col-reverse md:flex-col overflow-hidden backdrop-brightness-150 bg-opacity-70 md:bg-opacity-80 shadow-window backdrop-blur-xl rounded-2xl md:rounded-window h-full w-full max-h-[calc(90dvh)] md:max-h-window md:max-w-window opacity-0"
@@ -98,7 +98,7 @@
 		{/if}
 	</div>
 	<div bind:this={instructions} class="hidden md:flex gap-2 items-end opacity-0">
-		<span class="text-slate-300 text-sm opacity-40">Navigate with your keyboard</span>
+		<span class="text-slate-300 text-sm opacity-75">Navigate with your keyboard</span>
 		<img
 			src={keyboardSVG}
 			alt="A layout representing the up, down, left, and right keys on a keyboard."

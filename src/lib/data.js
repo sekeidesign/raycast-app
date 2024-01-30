@@ -71,14 +71,14 @@ export const homeLinks = [
 		icon: 'avatar'
 	},
 	{
-		name: 'Why MetaLab',
+		name: 'Why Planned 🖤 PG',
 		secondaryLabel: null,
 		detail: 'Intro & Cover Letter',
 		actionLabel: 'Open document',
 		destination: 'cover-letter',
 		itemType: 'local',
 		category: 'Basics',
-		icon: 'metalab'
+		icon: 'planned'
 	},
 	{
 		name: 'My work',

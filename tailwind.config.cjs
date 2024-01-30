@@ -27,7 +27,7 @@ const config = {
 				primary: 'rgba(13, 13, 13, 1)',
 				secondary: 'rgba(13, 13, 13, 0.50)',
 				tertiary: 'rgba(13, 13, 13, 0.35)',
-				raycast: '#A82222'
+				raycast: '#514AC0'
 			},
 			backgroundImage: {
 				'text-gradient': 'linear-gradient(180deg, #8785A9 0%, rgba(82, 77, 145, 0.43) 100%);'

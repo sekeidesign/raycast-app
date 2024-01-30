@@ -14,6 +14,7 @@
 	import threads from '$lib/link-icons/threads.svg';
 	import work from '$lib/link-icons/work.svg';
 	import youtube from '$lib/link-icons/youtube.svg';
+	import planned from '$lib/link-icons/planned.svg';
 
 	const icons = {
 		avatar,
@@ -30,7 +31,8 @@
 		stageGuide,
 		threads,
 		work,
-		youtube
+		youtube,
+		planned
 	};
 
 	export let icon = '';
